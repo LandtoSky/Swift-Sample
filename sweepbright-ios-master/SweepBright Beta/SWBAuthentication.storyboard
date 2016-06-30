@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jhu-uh-EwY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Authentication View Controller-->
+        <scene sceneID="w30-28-kgs">
+            <objects>
+                <viewController storyboardIdentifier="SWBAuthenticationViewController" id="jhu-uh-EwY" customClass="SWBAuthenticationViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IF2-93-CeT"/>
+                        <viewControllerLayoutGuide type="bottom" id="4yf-6s-Pof"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KoR-O7-EOK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="Zbe-bI-zB8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-bN-2xf">
+                                <rect key="frame" x="20" y="541" width="560" height="44"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE0-Nr-HWI">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="FG7-C2-LZz"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k35-Tx-H4v" customClass="SWBAddButton" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="560" height="0.0"/>
+                                        <color key="backgroundColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Log In" image="login-icon">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signIn:" destination="jhu-uh-EwY" eventType="touchUpInside" id="peg-Sh-vrs"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2w-Z8-sFr">
+                                        <rect key="frame" x="0.0" y="45" width="560" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                        <color key="textColor" red="0.80392156859999997" green="0.098039215690000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TopLogo" translatesAutoresizingMaskIntoConstraints="NO" id="bei-Kb-Bx4">
+                                <rect key="frame" x="44" y="120" width="512" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="6Wj-Id-rvR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6Wj-Id-rvR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4yf-6s-Pof" firstAttribute="top" secondItem="Zbe-bI-zB8" secondAttribute="bottom" id="2yM-xS-JA2"/>
+                            <constraint firstItem="bei-Kb-Bx4" firstAttribute="leading" secondItem="KoR-O7-EOK" secondAttribute="leading" constant="44" id="68j-jL-tXP"/>
+                            <constraint firstItem="4yf-6s-Pof" firstAttribute="top" secondItem="eXg-bN-2xf" secondAttribute="bottom" constant="15" id="Ad2-lk-5YF"/>
+                            <constraint firstItem="Zbe-bI-zB8" firstAttribute="leading" secondItem="KoR-O7-EOK" secondAttribute="leading" id="DSu-XC-wdc"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbe-bI-zB8" secondAttribute="trailing" id="HtH-NR-NNI"/>
+                            <constraint firstItem="Zbe-bI-zB8" firstAttribute="top" secondItem="KoR-O7-EOK" secondAttribute="top" id="Q3Y-rs-ceo"/>
+                            <constraint firstAttribute="trailing" secondItem="bei-Kb-Bx4" secondAttribute="trailing" constant="44" id="aeC-Sb-jOt"/>
+                            <constraint firstItem="eXg-bN-2xf" firstAttribute="leading" secondItem="KoR-O7-EOK" secondAttribute="leadingMargin" id="agd-7q-rUk"/>
+                            <constraint firstItem="bei-Kb-Bx4" firstAttribute="top" secondItem="IF2-93-CeT" secondAttribute="bottom" constant="100" id="loG-gf-rgt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eXg-bN-2xf" secondAttribute="trailing" id="twb-TA-2sl"/>
+                            <constraint firstItem="bei-Kb-Bx4" firstAttribute="centerX" secondItem="KoR-O7-EOK" secondAttribute="centerX" id="yiw-in-r6o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertLabel" destination="G2w-Z8-sFr" id="lQg-gG-x7E"/>
+                        <outlet property="bottomConstraint" destination="Ad2-lk-5YF" id="kLb-88-MWn"/>
+                        <outlet property="formStackView" destination="eXg-bN-2xf" id="vve-fZ-PCn"/>
+                        <outlet property="signInButton" destination="k35-Tx-H4v" id="Z0E-oj-bKy"/>
+                        <outlet property="usernameTextField" destination="aE0-Nr-HWI" id="UdG-a8-Smy"/>
+                        <segue destination="YGx-iG-hzm" kind="show" identifier="signInSegue" id="cHZ-A8-Ud8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMB-ZP-OfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="314"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Aer-Gx-qZE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="YGx-iG-hzm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nht-Xg-YrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1365" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="320" height="568"/>
+        <image name="TopLogo" width="231" height="56"/>
+        <image name="login-icon" width="15" height="24"/>
+    </resources>
+</document>

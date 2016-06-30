@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zgj-lk-4ar">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Visit-->
+        <scene sceneID="Mbf-Z5-wbe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zgj-lk-4ar" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Visit" image="visit-icon" selectedImage="visit-icon-selected" id="WWa-FG-cb5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" shadowImage="back" backIndicatorImage="back" backIndicatorTransitionMaskImage="back" id="fvO-u4-85Y" customClass="SWBNavigationBar" customModule="SweepBright" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f6s-s6-gT1" kind="relationship" relationship="rootViewController" id="DUa-RN-Icy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bL2-MJ-TqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="1228"/>
+        </scene>
+        <!--SWBNewProperty-->
+        <scene sceneID="jAz-bo-5yc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SWBNewProperty" id="8p4-hw-atj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCo-f8-7Ih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1115" y="866"/>
+        </scene>
+        <!--SWBFilterProperties-->
+        <scene sceneID="1FR-LA-NsH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SWBFilterProperties" id="dQW-zs-SrC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4lq-CV-Tp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="866"/>
+        </scene>
+        <!--PROPERTIES-->
+        <scene sceneID="Xrv-na-661">
+            <objects>
+                <tableViewController storyboardIdentifier="UITableViewController-btN-v2-ooh" id="f6s-s6-gT1" customClass="SWBVisitTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="DeG-qw-Hjx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search" id="yeb-ue-OMF">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="barTintColor" red="0.94117647059999998" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <sections/>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="PROPERTIES" id="634-iY-2Ct" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target">
+                        <barButtonItem key="leftBarButtonItem" image="filter" id="qz0-wm-mhd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="dQW-zs-SrC" kind="presentation" identifier="filterSegue" id="1jM-Nx-dmc"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="gQ0-mk-caE">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="8p4-hw-atj" kind="presentation" id="T1U-mn-QVI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="U3B-ZL-QnL" customClass="SWBRefreshProperties" customModule="SweepBright" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle"/>
+                        <connections>
+                            <action selector="refresh:" destination="f6s-s6-gT1" eventType="valueChanged" id="WlN-HP-jf0"/>
+                        </connections>
+                    </refreshControl>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="Ijo-6G-n7P" id="Ifx-MJ-3Cz"/>
+                        <segue destination="QTH-oG-IWs" kind="show" identifier="OverviewSegue" id="BcV-fm-xQ9">
+                            <nil key="action"/>
+                        </segue>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zl2-6J-QqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="Ijo-6G-n7P">
+                    <connections>
+                        <outlet property="delegate" destination="f6s-s6-gT1" id="KMD-Lt-ARd"/>
+                        <outlet property="searchContentsController" destination="f6s-s6-gT1" id="LKr-38-bj4"/>
+                        <outlet property="searchResultsDataSource" destination="f6s-s6-gT1" id="rZz-IZ-t7u"/>
+                        <outlet property="searchResultsDelegate" destination="f6s-s6-gT1" id="UNY-KI-nW9"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="885" y="1223"/>
+        </scene>
+        <!--SWBPropertySelectedTabBar-->
+        <scene sceneID="U8Z-d4-Xb5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PropertyOverviewViewController" storyboardName="SWBPropertySelectedTabBar" id="QTH-oG-IWs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfd-FN-Mr4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="1271"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="24" height="14"/>
+        <image name="filter" width="16" height="15"/>
+        <image name="visit-icon" width="25" height="22"/>
+        <image name="visit-icon-selected" width="25" height="22"/>
+    </resources>
+</document>

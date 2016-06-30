@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRMContactForm" customModule="SweepBright" customModuleProvider="target">
+            <connections>
+                <outlet property="emailButton" destination="16c-to-Qy1" id="eYW-ZX-9QO"/>
+                <outlet property="emailTextField" destination="Wow-cz-Ckk" id="dUb-Go-iZx"/>
+                <outlet property="firstNameTextField" destination="fzn-TV-N1d" id="CeF-CJ-n58"/>
+                <outlet property="phoneButton" destination="4aE-Pk-Esd" id="qww-yr-dVw"/>
+                <outlet property="phoneTextField" destination="hKr-i6-U0g" id="Ttp-6d-zpq"/>
+                <outlet property="surnameTextField" destination="jp1-Hg-sNq" id="uaJ-qp-cYI"/>
+                <outlet property="whatsappSection" destination="hO3-Sy-R3x" id="Drb-19-gAU"/>
+                <outlet property="whatsappSwitch" destination="W2t-i6-RG5" id="gNf-Fn-vVG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactFormCell" rowHeight="247" id="rcs-qk-rlm" customClass="CRMContactFormTableViewCell" customModule="SweepBright" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rcs-qk-rlm" id="xcP-zd-fXs">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="246"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="eJs-pJ-rS9">
+                        <rect key="frame" x="15" y="0.0" width="371" height="246"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBL-Ho-IoK">
+                                <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4HI-9T-fXI">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpD-Kw-Fc8">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="SzP-ix-4Hl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter first name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-TV-N1d">
+                                                <rect key="frame" x="100" y="0.0" width="271" height="48"/>
+                                                <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="5Do-5V-R5L"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="4HI-9T-fXI" firstAttribute="leading" secondItem="XBL-Ho-IoK" secondAttribute="leading" id="EaS-Zt-vb3"/>
+                                    <constraint firstAttribute="trailing" secondItem="4HI-9T-fXI" secondAttribute="trailing" id="S9P-B2-HPE"/>
+                                    <constraint firstItem="4HI-9T-fXI" firstAttribute="top" secondItem="XBL-Ho-IoK" secondAttribute="top" id="bCL-xP-NEF"/>
+                                    <constraint firstAttribute="bottom" secondItem="4HI-9T-fXI" secondAttribute="bottom" id="ptH-Ey-1yJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwX-mv-JB8">
+                                <rect key="frame" x="0.0" y="49" width="371" height="49"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOS-SA-iA9">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ry-h7-QNP">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="49"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="num-Zp-PEc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter surname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jp1-Hg-sNq">
+                                                <rect key="frame" x="100" y="0.0" width="271" height="49"/>
+                                                <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Ff4-Pi-YMZ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yOS-SA-iA9" secondAttribute="trailing" id="08q-hr-yGo"/>
+                                    <constraint firstItem="yOS-SA-iA9" firstAttribute="top" secondItem="EwX-mv-JB8" secondAttribute="top" id="5bH-cf-ef8"/>
+                                    <constraint firstAttribute="bottom" secondItem="yOS-SA-iA9" secondAttribute="bottom" id="Qnv-bh-0aE"/>
+                                    <constraint firstItem="yOS-SA-iA9" firstAttribute="leading" secondItem="EwX-mv-JB8" secondAttribute="leading" id="hsK-VE-ZnB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3b-Lx-frJ">
+                                <rect key="frame" x="0.0" y="99" width="371" height="48"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTB-B8-lTj">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsC-gQ-kfr">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ikT-7L-liX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKr-i6-U0g">
+                                                <rect key="frame" x="100" y="0.0" width="271" height="48"/>
+                                                <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                            </textField>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aE-Pk-Esd">
+                                                <rect key="frame" x="371" y="0.0" width="0.0" height="48"/>
+                                                <state key="normal" image="phone"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="AoN-6b-thE"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rTB-B8-lTj" secondAttribute="trailing" id="DzM-1Q-uyQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="rTB-B8-lTj" secondAttribute="bottom" id="Qe9-Vc-2jC"/>
+                                    <constraint firstItem="rTB-B8-lTj" firstAttribute="top" secondItem="v3b-Lx-frJ" secondAttribute="top" id="SZR-hb-qYo"/>
+                                    <constraint firstItem="rTB-B8-lTj" firstAttribute="leading" secondItem="v3b-Lx-frJ" secondAttribute="leading" id="foE-WD-D0f"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hO3-Sy-R3x">
+                                <rect key="frame" x="0.0" y="148" width="371" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does this person use Whatsapp?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g51-pV-HRi">
+                                        <rect key="frame" x="0.0" y="16" width="219" height="18"/>
+                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                        <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2t-i6-RG5" customClass="SWBSwitch" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="306" y="14" width="50" height="22"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7YQ-SH-tCu"/>
+                                            <constraint firstAttribute="height" constant="22" id="Fef-cG-Ewq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="g51-pV-HRi" firstAttribute="leading" secondItem="hO3-Sy-R3x" secondAttribute="leading" id="8mM-iU-mh3"/>
+                                    <constraint firstAttribute="trailing" secondItem="W2t-i6-RG5" secondAttribute="trailing" constant="15" id="Lvc-AO-5c9"/>
+                                    <constraint firstItem="W2t-i6-RG5" firstAttribute="centerY" secondItem="hO3-Sy-R3x" secondAttribute="centerY" id="VLt-ul-lel"/>
+                                    <constraint firstItem="g51-pV-HRi" firstAttribute="centerY" secondItem="hO3-Sy-R3x" secondAttribute="centerY" id="oUR-aN-bHG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sli-Yq-Roc">
+                                <rect key="frame" x="0.0" y="198" width="371" height="48"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cQ-6Y-2UD">
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Msx-dB-5H8">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Syw-0x-NtM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <color key="textColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter e-mail address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wow-cz-Ckk">
+                                                <rect key="frame" x="100" y="0.0" width="271" height="48"/>
+                                                <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16c-to-Qy1">
+                                                <rect key="frame" x="371" y="0.0" width="0.0" height="48"/>
+                                                <state key="normal" image="mail"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Nth-Zd-KwC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7cQ-6Y-2UD" secondAttribute="trailing" id="02p-CW-hfU"/>
+                                    <constraint firstAttribute="bottom" secondItem="7cQ-6Y-2UD" secondAttribute="bottom" id="COg-Jy-Qgm"/>
+                                    <constraint firstItem="7cQ-6Y-2UD" firstAttribute="leading" secondItem="Sli-Yq-Roc" secondAttribute="leading" id="Df8-WT-ctE"/>
+                                    <constraint firstItem="7cQ-6Y-2UD" firstAttribute="top" secondItem="Sli-Yq-Roc" secondAttribute="top" id="i4w-aM-d4c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="280" id="vc4-7L-A8C"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="vc4-7L-A8C"/>
+                            </mask>
+                        </variation>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eJs-pJ-rS9" secondAttribute="bottom" id="2QS-1M-3jB"/>
+                    <constraint firstItem="eJs-pJ-rS9" firstAttribute="top" secondItem="xcP-zd-fXs" secondAttribute="top" id="RJA-4v-nhP"/>
+                    <constraint firstItem="eJs-pJ-rS9" firstAttribute="leading" secondItem="xcP-zd-fXs" secondAttribute="leading" constant="15" id="utA-ak-TY2"/>
+                    <constraint firstAttribute="trailing" secondItem="eJs-pJ-rS9" secondAttribute="trailing" constant="15" id="vFz-Im-1XX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="503.5" y="243.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mail" width="20" height="14"/>
+        <image name="phone" width="18" height="18"/>
+    </resources>
+</document>

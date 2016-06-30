@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pYQ-PZ-jVb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Light.otf">
+            <string>LFTEtica-Light</string>
+        </mutableArray>
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="KaM-aG-dRE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pYQ-PZ-jVb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YzG-er-z9P" customClass="SWBNavigationBar" customModule="SweepBright" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cKd-Pz-CYm" kind="relationship" relationship="rootViewController" id="MUr-Fh-FHd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KjB-Vv-RVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="-483"/>
+        </scene>
+        <!--Filter-->
+        <scene sceneID="UZB-ZB-j35">
+            <objects>
+                <viewController id="cKd-Pz-CYm" customClass="SWBMatchFilterTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9vX-Fr-8FY"/>
+                        <viewControllerLayoutGuide type="bottom" id="tSn-NV-B8s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I4b-wd-sMq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-1F-FlQ">
+                                <rect key="frame" x="3" y="553" width="594" height="44"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Dub-3X-Lag"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="LFTEtica-Light" family="LFT Etica" pointSize="17"/>
+                                <state key="normal" title="Apply Filter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissViewController:" destination="cKd-Pz-CYm" eventType="touchUpInside" id="qYP-Gt-kfB"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATCHING" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOx-DX-4Ps">
+                                <rect key="frame" x="14" y="84" width="53" height="13"/>
+                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="10.478999999999999"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.41568627450980394" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4a-CP-wxe">
+                                <rect key="frame" x="0.0" y="105" width="600" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bright Matching" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJT-8A-ZCH">
+                                        <rect key="frame" x="15" y="13" width="107" height="18"/>
+                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                        <color key="textColor" red="0.33725490196078434" green="0.32549019607843138" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-wD-Ben" customClass="SWBSwitch" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="535" y="8" width="50" height="29"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Gvp-E0-UvA"/>
+                                            <constraint firstAttribute="height" constant="29" id="JXA-wV-Eih"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NrA-wD-Ben" secondAttribute="trailing" constant="15" id="3EU-hv-1Pg"/>
+                                    <constraint firstItem="nJT-8A-ZCH" firstAttribute="centerY" secondItem="O4a-CP-wxe" secondAttribute="centerY" id="7If-iH-WaX"/>
+                                    <constraint firstItem="nJT-8A-ZCH" firstAttribute="leading" secondItem="O4a-CP-wxe" secondAttribute="leading" constant="15" id="BGw-8n-Mg7"/>
+                                    <constraint firstAttribute="height" constant="44" id="Q6o-Of-vp7"/>
+                                    <constraint firstItem="NrA-wD-Ben" firstAttribute="centerY" secondItem="O4a-CP-wxe" secondAttribute="centerY" id="s1U-ki-8cZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bright Matching returns more matches that are less accurate." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTb-W0-6cZ">
+                                <rect key="frame" x="0.0" y="152" width="600" height="32"/>
+                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="13"/>
+                                <color key="textColor" red="0.4392156862745098" green="0.41568627450980394" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TTb-W0-6cZ" secondAttribute="trailing" id="055-ou-Ywz"/>
+                            <constraint firstItem="EOx-DX-4Ps" firstAttribute="top" secondItem="9vX-Fr-8FY" secondAttribute="bottom" constant="20" id="5uM-xG-fvo"/>
+                            <constraint firstItem="O4a-CP-wxe" firstAttribute="leading" secondItem="I4b-wd-sMq" secondAttribute="leading" id="6Ds-aW-bH4"/>
+                            <constraint firstItem="O4a-CP-wxe" firstAttribute="top" secondItem="EOx-DX-4Ps" secondAttribute="bottom" constant="8" id="Hhg-2n-TYj"/>
+                            <constraint firstItem="TTb-W0-6cZ" firstAttribute="leading" secondItem="I4b-wd-sMq" secondAttribute="leading" id="Jfn-00-cKK"/>
+                            <constraint firstAttribute="trailing" secondItem="O4a-CP-wxe" secondAttribute="trailing" id="QoM-2c-Lth"/>
+                            <constraint firstItem="1kZ-1F-FlQ" firstAttribute="leading" secondItem="I4b-wd-sMq" secondAttribute="leading" constant="3" id="Uto-eS-K8E"/>
+                            <constraint firstItem="EOx-DX-4Ps" firstAttribute="leading" secondItem="I4b-wd-sMq" secondAttribute="leading" constant="14" id="XCL-pm-M83"/>
+                            <constraint firstItem="TTb-W0-6cZ" firstAttribute="top" secondItem="O4a-CP-wxe" secondAttribute="bottom" constant="3" id="dmA-lE-inn"/>
+                            <constraint firstAttribute="trailing" secondItem="1kZ-1F-FlQ" secondAttribute="trailing" constant="3" id="u0u-Bg-Soh"/>
+                            <constraint firstItem="tSn-NV-B8s" firstAttribute="top" secondItem="1kZ-1F-FlQ" secondAttribute="bottom" constant="3" id="uDE-LB-Tx4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Filter" id="h09-4f-NDg" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="U4C-Yz-fJB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="dismissViewController:" destination="cKd-Pz-CYm" id="Lcz-w8-dGA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INK-fJ-Q6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="-483"/>
+        </scene>
+    </scenes>
+</document>

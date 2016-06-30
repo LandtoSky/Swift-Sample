@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Light.otf">
+            <string>LFTEtica-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SWBSlider" customModule="SweepBright" customModuleProvider="target">
+            <connections>
+                <outlet property="slider" destination="N5S-AR-pUy" id="dZI-8V-Veu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-d0-NAf">
+                    <rect key="frame" x="8" y="8" width="584" height="524"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Poor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qf-Zd-dPS">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="457"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="ZNP-Nq-CE8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="LFTEtica-Light" family="LFT Etica" pointSize="22"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="widthClass=compact" ambiguous="YES">
+                                <rect key="frame" x="159" y="0.0" width="67" height="56"/>
+                            </variation>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bath-poor" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-LZ-nmO">
+                            <rect key="frame" x="0.0" y="457" width="584" height="67"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="67" id="yTc-KZ-bAL"/>
+                            </constraints>
+                            <variation key="widthClass=compact" ambiguous="YES">
+                                <rect key="frame" x="140" y="56" width="104" height="67"/>
+                            </variation>
+                        </imageView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ykx-3p-8Dm">
+                    <rect key="frame" x="8" y="532" width="584" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0O-Qv-FTN">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="30"/>
+                            <subviews>
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="N5S-AR-pUy" customClass="SWBGenericGeneralConditionSlider" customModule="SweepBright" customModuleProvider="target">
+                                    <rect key="frame" x="28" y="0.0" width="528" height="31"/>
+                                    <connections>
+                                        <outlet property="image" destination="W1g-LZ-nmO" id="E5M-NW-6Se"/>
+                                        <outlet property="label" destination="8qf-Zd-dPS" id="kN9-dZ-kAD"/>
+                                        <outlet property="sliderLabels" destination="Jl9-5j-TCw" id="Ln2-vs-GZ9"/>
+                                    </connections>
+                                </slider>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="N5S-AR-pUy" secondAttribute="trailing" constant="30" id="HXM-4Q-A8y"/>
+                                <constraint firstItem="N5S-AR-pUy" firstAttribute="leading" secondItem="w0O-Qv-FTN" secondAttribute="leading" constant="30" id="NW1-1G-6p8"/>
+                                <constraint firstAttribute="bottom" secondItem="N5S-AR-pUy" secondAttribute="bottom" id="Wb5-pE-y7d"/>
+                                <constraint firstItem="N5S-AR-pUy" firstAttribute="top" secondItem="w0O-Qv-FTN" secondAttribute="top" id="dhG-nw-n1E"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jl9-5j-TCw" customClass="SWBSliderStackVIew" customModule="SweepBright" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="30" width="584" height="30"/>
+                            <connections>
+                                <outlet property="slider" destination="N5S-AR-pUy" id="BfH-QW-keI"/>
+                            </connections>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="uVU-E9-F0f"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dnf-d0-NAf" secondAttribute="trailing" constant="8" id="3Mi-4Q-Uhl"/>
+                <constraint firstItem="dnf-d0-NAf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Pch-9R-aBj"/>
+                <constraint firstItem="Ykx-3p-8Dm" firstAttribute="top" secondItem="dnf-d0-NAf" secondAttribute="bottom" id="ebv-t4-SEK"/>
+                <constraint firstItem="Ykx-3p-8Dm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="iY6-DZ-b2z"/>
+                <constraint firstAttribute="trailing" secondItem="Ykx-3p-8Dm" secondAttribute="trailing" constant="8" id="oCY-kJ-39g"/>
+                <constraint firstAttribute="bottom" secondItem="Ykx-3p-8Dm" secondAttribute="bottom" constant="8" id="qec-qK-PrA"/>
+                <constraint firstItem="dnf-d0-NAf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="vYy-ZV-Lzk"/>
+            </constraints>
+            <point key="canvasLocation" x="249" y="-1"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bath-poor" width="104" height="67"/>
+    </resources>
+</document>

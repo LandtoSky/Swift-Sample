@@ -1,0 +1,37 @@
+platform :ios, '9.1'
+
+pod 'GoogleMaps'
+
+target 'SweepBright' do
+    use_frameworks!
+    inhibit_all_warnings!
+
+    pod 'Fabric', '1.6.5'
+    pod 'Crashlytics', '3.7.0'
+    pod 'AviarySDK', :podspec => 'AviarySDK.podspec.json'
+    pod 'JDStatusBarNotification'
+    pod 'FloatingActionSheetController', :inhibit_warnings => true
+    pod 'JVFloatLabeledTextField'
+    pod 'ReactiveCocoa', '~> 4.0', :inhibit_warnings => true
+    pod 'SCLAlertView'
+    pod 'VMaskTextField','1.0.8'
+    pod 'TRCurrencyTextField'
+    pod 'SwiftValidator', '3.0.1'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'Alamofire', '~> 3.2'
+    pod 'KeychainSwift', '~> 3.0'
+    pod 'RealmSwift', '1.0'
+    pod 'ActionSheetPicker-3.0'
+    pod 'HanekeSwift'
+    pod 'UITextView+Placeholder'
+
+    target 'SweepBrightTests' do
+        inherit! :search_paths
+
+        pod 'GoogleMaps'
+    end
+
+    target 'SweepBrightIntegrationTests' do
+        inherit! :search_paths
+    end
+end

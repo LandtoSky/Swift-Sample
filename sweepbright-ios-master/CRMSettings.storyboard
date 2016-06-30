@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Q3-ZV-snU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--SETTINGS-->
+        <scene sceneID="NDE-0I-9tb">
+            <objects>
+                <tableViewController id="5Q3-ZV-snU" customClass="CRMSettingsTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="lSa-0R-cxC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection headerTitle="Archive" id="Car-yS-ygC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Abo-qO-bXQ">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Abo-qO-bXQ" id="trA-iL-4en">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XSo-LY-RuC">
+                                                    <rect key="frame" x="8" y="0.0" width="584" height="44"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKz-wA-ns6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="43"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                                            <state key="normal" title="Archive Lead">
+                                                                <color key="titleColor" red="0.81568627449999997" green="0.0078431372550000003" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="archiveLead:" destination="5Q3-ZV-snU" eventType="touchUpInside" id="ydX-PG-Qeb"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.08235294118" green="0.4941176471" blue="0.61960784310000006" alpha="0.28000000000000003" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="vKz-wA-ns6" firstAttribute="leading" secondItem="XSo-LY-RuC" secondAttribute="leading" id="24a-Jo-w6C"/>
+                                                        <constraint firstItem="vKz-wA-ns6" firstAttribute="top" secondItem="XSo-LY-RuC" secondAttribute="top" id="iAf-BN-3mD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vKz-wA-ns6" secondAttribute="trailing" id="wUJ-EX-YJ9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="vKz-wA-ns6" secondAttribute="bottom" constant="1" id="wnR-vy-tIc"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XSo-LY-RuC" firstAttribute="leading" secondItem="trA-iL-4en" secondAttribute="leading" constant="8" id="258-jN-nBR"/>
+                                                <constraint firstAttribute="bottom" secondItem="XSo-LY-RuC" secondAttribute="bottom" id="7Yw-GL-jTE"/>
+                                                <constraint firstItem="XSo-LY-RuC" firstAttribute="top" secondItem="trA-iL-4en" secondAttribute="top" id="am5-Hz-kwd"/>
+                                                <constraint firstAttribute="trailing" secondItem="XSo-LY-RuC" secondAttribute="trailing" constant="8" id="wLu-0q-f9r"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5Q3-ZV-snU" id="iMc-7V-9kO"/>
+                            <outlet property="delegate" destination="5Q3-ZV-snU" id="ByW-ue-vbm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="SETTINGS" id="QFH-Sd-GK9" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="archiveButton" destination="vKz-wA-ns6" id="6dB-IV-tkg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjQ-iZ-ZVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="278"/>
+        </scene>
+    </scenes>
+</document>

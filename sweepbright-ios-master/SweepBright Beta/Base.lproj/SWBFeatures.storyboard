@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jmR-2n-Og5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--FEATURES-->
+        <scene sceneID="z7X-b9-1fb">
+            <objects>
+                <tableViewController storyboardIdentifier="SWBFeaturesTableViewController" id="jmR-2n-Og5" customClass="SWBFeaturesTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="foS-uw-yho">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection headerTitle="BATHROOM CONDITION" id="NF6-9w-kwM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="wLf-7H-m3P">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wLf-7H-m3P" id="io6-je-lmA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4g-f5-REz" customClass="SWBSlider" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="key" value="bathroom"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="imagePrefix" value="bathroom"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="s4g-f5-REz" secondAttribute="bottom" id="9Xr-Ve-z7S"/>
+                                                <constraint firstAttribute="trailing" secondItem="s4g-f5-REz" secondAttribute="trailing" id="KOW-o8-03I"/>
+                                                <constraint firstItem="s4g-f5-REz" firstAttribute="top" secondItem="io6-je-lmA" secondAttribute="top" id="VXM-ut-ih8"/>
+                                                <constraint firstItem="s4g-f5-REz" firstAttribute="leading" secondItem="io6-je-lmA" secondAttribute="leading" id="aRe-32-f8S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="KITCHEN CONDITION" id="IFB-To-FRv">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="LK1-D9-zhh">
+                                        <rect key="frame" x="0.0" y="365" width="600" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LK1-D9-zhh" id="c5T-jO-qNn">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYb-qv-Y2M" customClass="SWBSlider" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="199"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="key" value="kitchen"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="imagePrefix" value="kitchen"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DYb-qv-Y2M" firstAttribute="top" secondItem="c5T-jO-qNn" secondAttribute="top" id="4Q7-wa-k5f"/>
+                                                <constraint firstItem="DYb-qv-Y2M" firstAttribute="leading" secondItem="c5T-jO-qNn" secondAttribute="leading" id="RlK-mz-Xuj"/>
+                                                <constraint firstAttribute="bottom" secondItem="DYb-qv-Y2M" secondAttribute="bottom" id="iGZ-ce-fk9"/>
+                                                <constraint firstAttribute="trailing" secondItem="DYb-qv-Y2M" secondAttribute="trailing" id="qZT-cl-wDe"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="COMFORT" id="pPF-QF-6g5">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="350" id="s7p-Vr-0bU">
+                                        <rect key="frame" x="0.0" y="616" width="600" height="350"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s7p-Vr-0bU" id="XEe-Cb-qLP">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="kej-2O-v8G" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="lCr-Va-3o1" id="j9F-zn-l81"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kej-2O-v8G" secondAttribute="trailing" id="Tg0-zo-egx"/>
+                                                <constraint firstItem="kej-2O-v8G" firstAttribute="leading" secondItem="XEe-Cb-qLP" secondAttribute="leading" id="Ty3-MQ-oP5"/>
+                                                <constraint firstItem="kej-2O-v8G" firstAttribute="top" secondItem="XEe-Cb-qLP" secondAttribute="top" id="UhR-Be-ZkD"/>
+                                                <constraint firstAttribute="bottom" secondItem="kej-2O-v8G" secondAttribute="bottom" id="tYJ-IU-Me5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="H/C SYSTEM" id="Gzs-pr-INa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="s7a-Yt-oZh">
+                                        <rect key="frame" x="0.0" y="1017" width="600" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s7a-Yt-oZh" id="4JD-eu-Hf0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="8G6-hl-HGP" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="SPD-TW-71p" id="qjf-Gg-UN2"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="8G6-hl-HGP" secondAttribute="bottom" id="Tgs-eh-Ce4"/>
+                                                <constraint firstAttribute="trailing" secondItem="8G6-hl-HGP" secondAttribute="trailing" id="UKz-lG-5Kw"/>
+                                                <constraint firstItem="8G6-hl-HGP" firstAttribute="leading" secondItem="4JD-eu-Hf0" secondAttribute="leading" id="fDC-rj-htd"/>
+                                                <constraint firstItem="8G6-hl-HGP" firstAttribute="top" secondItem="4JD-eu-Hf0" secondAttribute="top" id="fFD-4z-dZO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="ENERGY SOURCE" id="Uys-7Q-ezj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="3ZJ-HS-5qz">
+                                        <rect key="frame" x="0.0" y="1198" width="600" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3ZJ-HS-5qz" id="EjH-CT-P7h">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Gp-q5-0ck" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="Tmb-Tx-khI" id="Yef-Se-BNC"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="2Gp-q5-0ck" secondAttribute="trailing" id="BOh-Jc-Orz"/>
+                                                <constraint firstAttribute="bottom" secondItem="2Gp-q5-0ck" secondAttribute="bottom" id="LWf-Zt-yP1"/>
+                                                <constraint firstItem="2Gp-q5-0ck" firstAttribute="leading" secondItem="EjH-CT-P7h" secondAttribute="leading" id="ULI-b2-oeG"/>
+                                                <constraint firstItem="2Gp-q5-0ck" firstAttribute="top" secondItem="EjH-CT-P7h" secondAttribute="top" id="uD4-R3-SfM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="SECURITY" id="ZFe-Dj-JIy">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="8ji-2c-iXQ">
+                                        <rect key="frame" x="0.0" y="1379" width="600" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ji-2c-iXQ" id="uOl-Et-DLE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-l1-bqc" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="57r-bx-ZWT" id="dTr-dD-AMq"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MqF-l1-bqc" firstAttribute="top" secondItem="uOl-Et-DLE" secondAttribute="top" id="6Sf-l5-PJy"/>
+                                                <constraint firstAttribute="trailing" secondItem="MqF-l1-bqc" secondAttribute="trailing" id="9jG-6Z-htP"/>
+                                                <constraint firstAttribute="bottom" secondItem="MqF-l1-bqc" secondAttribute="bottom" id="W3z-Ot-lOs"/>
+                                                <constraint firstItem="MqF-l1-bqc" firstAttribute="leading" secondItem="uOl-Et-DLE" secondAttribute="leading" id="qyt-rG-htC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="ECO" id="KvM-95-URa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="Z5q-fd-TAF">
+                                        <rect key="frame" x="0.0" y="1560" width="600" height="174"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5q-fd-TAF" id="9NH-Xl-uE9">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="173"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="uEC-9I-LoW" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="173"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="GSL-xp-3SL" id="J1h-8h-OQJ"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uEC-9I-LoW" firstAttribute="top" secondItem="9NH-Xl-uE9" secondAttribute="top" id="HQz-ZQ-IBT"/>
+                                                <constraint firstItem="uEC-9I-LoW" firstAttribute="leading" secondItem="9NH-Xl-uE9" secondAttribute="leading" id="ZSB-6h-nwz"/>
+                                                <constraint firstAttribute="trailing" secondItem="uEC-9I-LoW" secondAttribute="trailing" id="lMP-7p-iyD"/>
+                                                <constraint firstAttribute="bottom" secondItem="uEC-9I-LoW" secondAttribute="bottom" id="oBO-5V-ymM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="PERMISSIONS" id="7o4-hL-Wxz">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="174" id="tJ3-q0-IoI">
+                                        <rect key="frame" x="0.0" y="1785" width="600" height="174"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tJ3-q0-IoI" id="7GO-oP-pg6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="173"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="zWI-oD-ybf" customClass="SWBFeaturesTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="349"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <sections/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="CL5-d6-s7U" id="xcA-ww-dco"/>
+                                                    </connections>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zWI-oD-ybf" firstAttribute="leading" secondItem="7GO-oP-pg6" secondAttribute="leading" id="Cbh-vL-Q6a"/>
+                                                <constraint firstItem="zWI-oD-ybf" firstAttribute="top" secondItem="7GO-oP-pg6" secondAttribute="top" id="OG0-xK-Teg"/>
+                                                <constraint firstAttribute="trailing" secondItem="zWI-oD-ybf" secondAttribute="trailing" id="Ojy-Q5-Eyl"/>
+                                                <constraint firstAttribute="bottom" secondItem="zWI-oD-ybf" secondAttribute="bottom" id="aXB-3i-xq2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="BUILDING" id="o41-aa-q6R">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="ceW-F8-CFb">
+                                        <rect key="frame" x="0.0" y="2010" width="600" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ceW-F8-CFb" id="7q0-Rm-Ure">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="W9l-Zy-5pw" customClass="SWBBuildingTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="W9l-Zy-5pw" secondAttribute="trailing" id="EIt-Yj-0NW"/>
+                                                <constraint firstAttribute="bottom" secondItem="W9l-Zy-5pw" secondAttribute="bottom" id="m4L-fA-eFA"/>
+                                                <constraint firstItem="W9l-Zy-5pw" firstAttribute="leading" secondItem="7q0-Rm-Ure" secondAttribute="leading" id="qVh-bK-9GA"/>
+                                                <constraint firstItem="W9l-Zy-5pw" firstAttribute="top" secondItem="7q0-Rm-Ure" secondAttribute="top" id="rRn-pF-a7M"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="RENOVATION" id="Ong-Dp-0kC">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="QxR-db-gZM">
+                                        <rect key="frame" x="0.0" y="2149" width="600" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QxR-db-gZM" id="atk-uC-6gb">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-hV-Rgo" customClass="SWBRenovationTableView" customModule="SweepBright" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="143"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="hX5-hV-Rgo" secondAttribute="bottom" id="Oyn-dB-oGs"/>
+                                                <constraint firstAttribute="trailing" secondItem="hX5-hV-Rgo" secondAttribute="trailing" id="PEX-Rp-nk0"/>
+                                                <constraint firstItem="hX5-hV-Rgo" firstAttribute="leading" secondItem="atk-uC-6gb" secondAttribute="leading" id="bPa-xd-vky"/>
+                                                <constraint firstItem="hX5-hV-Rgo" firstAttribute="top" secondItem="atk-uC-6gb" secondAttribute="top" id="baw-Zn-mN6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="jmR-2n-Og5" id="vCL-yk-YkU"/>
+                            <outlet property="delegate" destination="jmR-2n-Og5" id="c4N-ut-GDS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="FEATURES" id="iNN-HU-FK6" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.32941176470588235" green="0.63529411764705879" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <connections>
+                        <outlet property="bathroomCell" destination="wLf-7H-m3P" id="Ow1-sS-34T"/>
+                        <outlet property="bathroomSliderView" destination="s4g-f5-REz" id="UNi-Wk-raP"/>
+                        <outlet property="buildingCell" destination="ceW-F8-CFb" id="xBF-8Z-QFK"/>
+                        <outlet property="buildingTableView" destination="W9l-Zy-5pw" id="oJ9-UY-5RU"/>
+                        <outlet property="comfortCell" destination="s7p-Vr-0bU" id="1I4-mp-n7u"/>
+                        <outlet property="comfortTableView" destination="kej-2O-v8G" id="zBD-Da-s3U"/>
+                        <outlet property="ecoCell" destination="Z5q-fd-TAF" id="IA1-8Z-Sqv"/>
+                        <outlet property="ecoTableView" destination="uEC-9I-LoW" id="XNj-1b-Xra"/>
+                        <outlet property="energySourceCell" destination="3ZJ-HS-5qz" id="Z0g-eF-aBp"/>
+                        <outlet property="energySourceTableView" destination="2Gp-q5-0ck" id="vYV-Pc-Ohe"/>
+                        <outlet property="hcCell" destination="s7a-Yt-oZh" id="jBw-SU-kxx"/>
+                        <outlet property="hcTableView" destination="8G6-hl-HGP" id="orn-dE-Egd"/>
+                        <outlet property="kitchenCell" destination="LK1-D9-zhh" id="yBF-UQ-lib"/>
+                        <outlet property="kitchenSliderView" destination="DYb-qv-Y2M" id="Wr8-cz-h6O"/>
+                        <outlet property="permissionsCell" destination="tJ3-q0-IoI" id="jpk-tJ-AFq"/>
+                        <outlet property="permissionsTableView" destination="zWI-oD-ybf" id="RYh-p2-NNw"/>
+                        <outlet property="renovationCell" destination="QxR-db-gZM" id="za4-9g-GbH"/>
+                        <outlet property="renovationTableView" destination="hX5-hV-Rgo" id="Xw3-81-yEF"/>
+                        <outlet property="securityCell" destination="8ji-2c-iXQ" id="eJ7-qP-ZFb"/>
+                        <outlet property="securityTableView" destination="MqF-l1-bqc" id="uP9-g1-Ngm"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vF4-CS-dfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="lCr-Va-3o1" customClass="SWBComfortDatasource" customModule="SweepBright" customModuleProvider="target"/>
+                <customObject id="SPD-TW-71p" customClass="SWBHCSystemDatasource" customModule="SweepBright" customModuleProvider="target"/>
+                <customObject id="Tmb-Tx-khI" customClass="SWBEnergySourceDatasource" customModule="SweepBright" customModuleProvider="target"/>
+                <customObject id="57r-bx-ZWT" customClass="SWBSecurityDatasource" customModule="SweepBright" customModuleProvider="target"/>
+                <customObject id="GSL-xp-3SL" customClass="SWBEcoDatasource" customModule="SweepBright" customModuleProvider="target"/>
+                <customObject id="CL5-d6-s7U" customClass="SWBPermissionsDatasource" customModule="SweepBright" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-953"/>
+        </scene>
+    </scenes>
+</document>

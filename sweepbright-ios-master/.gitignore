@@ -1,0 +1,6 @@
+
+*.app.dSYM.zip
+
+fastlane/report.xml
+
+.bashrc

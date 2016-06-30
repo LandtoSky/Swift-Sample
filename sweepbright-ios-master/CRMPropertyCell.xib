@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CRMContactCell" customModule="SweepBright" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="contactCell" rowHeight="86" id="H97-94-cyX" customClass="CRMContactCell" customModule="SweepBright" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H97-94-cyX" id="VKj-U8-9aY">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ac8-0N-p13">
+                        <rect key="frame" x="81" y="15" width="478" height="40"/>
+                        <subviews>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4H-sx-BTf">
+                                <rect key="frame" x="0.0" y="0.0" width="478" height="20"/>
+                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                <state key="normal" title="Alexander Soto">
+                                    <color key="titleColor" red="0.33725490196078434" green="0.32549019607843138" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSD-oo-3WU">
+                                <rect key="frame" x="0.0" y="21" width="478" height="19"/>
+                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="13"/>
+                                <state key="normal" title="Called yesterday">
+                                    <color key="titleColor" red="0.60784313725490191" green="0.58431372549019611" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="x8v-Co-xak"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EfK-Y1-JKM">
+                        <rect key="frame" x="81" y="55" width="478" height="22"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crm-investor" translatesAutoresizingMaskIntoConstraints="NO" id="HWR-8e-tts">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="zwe-Gp-55M"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loh-sf-IVX">
+                                <rect key="frame" x="28" y="0.0" width="450" height="22"/>
+                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="13"/>
+                                <color key="textColor" red="0.76470588235294112" green="0.74901960784313726" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBw-3T-Tum" customClass="ProfilePictureView" customModule="SweepBright" customModuleProvider="target">
+                        <rect key="frame" x="15" y="13" width="44" height="44"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.84705882349999995" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="WVY-dW-nPe"/>
+                            <constraint firstAttribute="height" constant="44" id="vBf-qC-b7U"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EfK-Y1-JKM" firstAttribute="width" secondItem="Ac8-0N-p13" secondAttribute="width" id="2GC-Mj-4fc"/>
+                    <constraint firstItem="EfK-Y1-JKM" firstAttribute="top" secondItem="Ac8-0N-p13" secondAttribute="bottom" id="6D0-yg-xk6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ac8-0N-p13" secondAttribute="trailing" id="OPy-US-ZTj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EfK-Y1-JKM" secondAttribute="bottom" id="cdy-Zl-mhF"/>
+                    <constraint firstItem="EBw-3T-Tum" firstAttribute="centerY" secondItem="Ac8-0N-p13" secondAttribute="centerY" id="f8S-pM-fXO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Loh-sf-IVX" secondAttribute="bottom" id="gkS-Kd-dJ0"/>
+                    <constraint firstItem="EfK-Y1-JKM" firstAttribute="leading" secondItem="Ac8-0N-p13" secondAttribute="leading" id="meJ-zN-bsL"/>
+                    <constraint firstItem="Ac8-0N-p13" firstAttribute="top" secondItem="VKj-U8-9aY" secondAttribute="top" constant="15" id="nkp-kz-R9T"/>
+                    <constraint firstItem="EBw-3T-Tum" firstAttribute="leading" secondItem="VKj-U8-9aY" secondAttribute="leading" constant="15" id="nnF-OZ-yxc"/>
+                    <constraint firstItem="EfK-Y1-JKM" firstAttribute="trailing" secondItem="Ac8-0N-p13" secondAttribute="trailing" id="pII-cX-iuc"/>
+                    <constraint firstItem="Ac8-0N-p13" firstAttribute="leading" secondItem="EBw-3T-Tum" secondAttribute="trailing" constant="22" id="qU5-2r-tNQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2GC-Mj-4fc"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contactName" destination="l4H-sx-BTf" id="zDm-4O-t8u"/>
+                <outlet property="profilePicture" destination="EBw-3T-Tum" id="uMn-Wm-8aN"/>
+                <outlet property="statusContact" destination="nSD-oo-3WU" id="Ywt-6u-qb9"/>
+                <outlet property="typeOfContact" destination="Loh-sf-IVX" id="N0v-HO-V3g"/>
+                <outlet property="typeOfContactIcon" destination="HWR-8e-tts" id="sHN-Fc-yc7"/>
+                <outlet property="typeOfContactStackView" destination="EfK-Y1-JKM" id="lEv-gG-XEV"/>
+            </connections>
+            <point key="canvasLocation" x="549" y="323.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="crm-investor" width="16" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,95 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.1.0)
+  - Alamofire (3.4.0)
+  - AviarySDK (4.4.7)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.5)
+  - FloatingActionSheetController (1.1.0)
+  - GoogleMaps (1.13.2)
+  - HanekeSwift (0.10.1)
+  - JDStatusBarNotification (1.5.3)
+  - JVFloatLabeledTextField (1.1.0)
+  - KeychainSwift (3.0.16)
+  - ReactiveCocoa (4.1.0):
+    - ReactiveCocoa/UI (= 4.1.0)
+    - Result (~> 2.0)
+  - ReactiveCocoa/Core (4.1.0):
+    - ReactiveCocoa/no-arc
+    - Result (~> 2.0)
+  - ReactiveCocoa/no-arc (4.1.0):
+    - Result (~> 2.0)
+  - ReactiveCocoa/UI (4.1.0):
+    - ReactiveCocoa/Core
+    - Result (~> 2.0)
+  - Realm (1.0.0):
+    - Realm/Headers (= 1.0.0)
+  - Realm/Headers (1.0.0)
+  - RealmSwift (1.0.0):
+    - Realm (= 1.0.0)
+  - Result (2.0.0)
+  - SCLAlertView (0.5.8)
+  - SwiftValidator (3.0.1)
+  - SwiftyJSON (2.3.2)
+  - TRCurrencyTextField (0.1.1)
+  - UITextView+Placeholder (1.2.0)
+  - VMaskTextField (1.0.8)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire (~> 3.2)
+  - AviarySDK (from `AviarySDK.podspec.json`)
+  - Crashlytics (= 3.7.0)
+  - Fabric (= 1.6.5)
+  - FloatingActionSheetController
+  - GoogleMaps
+  - HanekeSwift
+  - JDStatusBarNotification
+  - JVFloatLabeledTextField
+  - KeychainSwift (~> 3.0)
+  - ReactiveCocoa (~> 4.0)
+  - RealmSwift (= 1.0)
+  - SCLAlertView
+  - SwiftValidator (= 3.0.1)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - TRCurrencyTextField
+  - UITextView+Placeholder
+  - VMaskTextField (= 1.0.8)
+
+EXTERNAL SOURCES:
+  AviarySDK:
+    :podspec: AviarySDK.podspec.json
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: db66605feb85689279d328206c61f0e4f398df92
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  AviarySDK: 5d771d2193846bf9780710c5512f489cdffdea96
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
+  FloatingActionSheetController: 229e0cfe96d691b97c91900f9b6d54ece6bf93bd
+  GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  JDStatusBarNotification: 29413865af11c862c17180610b0f46a21118b412
+  JVFloatLabeledTextField: ea4a3d8387ddd43724c472bb2b8ab39b79af05d4
+  KeychainSwift: a5bb85cd498ce2217b55e055ec59e9268d83384c
+  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
+  Realm: e15cd8e7c11d3e576f628ba0b7cb855269b4991c
+  RealmSwift: 3229306d020d96f83b335f87a0dcbf2cef0e6a2b
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  SCLAlertView: 653e84d1f9fd95333bc54671fbadb7d0c47fce49
+  SwiftValidator: c59223144754045d7691febdc3b3ecc2e73b609c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TRCurrencyTextField: a942d5bd9cffc3fcf0fa2661e712adc1404df97b
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
+
+PODFILE CHECKSUM: e074c8905d0599b2ae7189e47ae5589a3df2397a
+
+COCOAPODS: 1.0.0

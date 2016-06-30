@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fg8-vf-213">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--LOCATION-->
+        <scene sceneID="EsL-nj-HMe">
+            <objects>
+                <viewController storyboardIdentifier="SWBPropertyLocationViewController" id="fg8-vf-213" customClass="SWBPropertyLocationViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muJ-fV-bFB"/>
+                        <viewControllerLayoutGuide type="bottom" id="MdA-RB-7tu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E0e-Kk-OXO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TDs-Md-0CC">
+                                <rect key="frame" x="0.0" y="64" width="600" height="65"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2GG-GA-B4z">
+                                        <rect key="frame" x="8" y="10" width="584" height="45"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DAU-NP-NBp">
+                                                <rect key="frame" x="0.0" y="0.0" width="584" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asking for permission" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMV-20-ZNL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                                        <color key="textColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-h0-K7v">
+                                                        <rect key="frame" x="195" y="0.0" width="194" height="44"/>
+                                                        <subviews>
+                                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qqG-ql-4ZO">
+                                                                <rect key="frame" x="8" y="0.0" width="20" height="44"/>
+                                                            </activityIndicatorView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Getting Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWm-WS-BbY">
+                                                                <rect key="frame" x="48" y="0.0" width="147" height="44"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                                                <color key="textColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="uWm-WS-BbY" secondAttribute="bottom" id="0i4-Y9-X0e"/>
+                                                            <constraint firstItem="uWm-WS-BbY" firstAttribute="top" secondItem="lZc-h0-K7v" secondAttribute="top" id="5ST-2g-rg1"/>
+                                                            <constraint firstItem="qqG-ql-4ZO" firstAttribute="leading" secondItem="lZc-h0-K7v" secondAttribute="leading" constant="8" id="Fij-yX-0Gu"/>
+                                                            <constraint firstItem="qqG-ql-4ZO" firstAttribute="top" secondItem="lZc-h0-K7v" secondAttribute="top" id="KQF-YT-3wM"/>
+                                                            <constraint firstAttribute="bottom" secondItem="qqG-ql-4ZO" secondAttribute="bottom" id="WJV-JM-n92"/>
+                                                            <constraint firstAttribute="bottom" secondItem="qqG-ql-4ZO" secondAttribute="bottom" id="dVJ-9E-hWc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uWm-WS-BbY" secondAttribute="trailing" id="fY1-B6-lQd"/>
+                                                            <constraint firstItem="qqG-ql-4ZO" firstAttribute="top" secondItem="lZc-h0-K7v" secondAttribute="top" id="jX1-Qi-W27"/>
+                                                            <constraint firstItem="uWm-WS-BbY" firstAttribute="leading" secondItem="qqG-ql-4ZO" secondAttribute="trailing" constant="20" id="qXI-Uu-8Yo"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsG-H0-R6d" customClass="SWBAddButton" customModule="SweepBright" customModuleProvider="target">
+                                                        <rect key="frame" x="389" y="0.0" width="195" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="WtL-AS-pgQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <size key="titleShadowOffset" width="0.0" height="-1"/>
+                                                        <state key="normal" title="Get Current Location" image="arrow-location">
+                                                            <color key="titleColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="getCurrentLocation:" destination="fg8-vf-213" eventType="touchUpInside" id="uFS-Ev-FKG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permission denied" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zM3-x0-IFD">
+                                                        <rect key="frame" x="584" y="0.0" width="0.0" height="44"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="17"/>
+                                                        <color key="textColor" red="0.090196078430000007" green="0.6588235294" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.082352941176470587" green="0.49411764705882355" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="EoH-oU-9LC"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="EoH-oU-9LC"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.082352941176470587" green="0.49411764705882355" blue="0.61960784313725492" alpha="0.28000000000000003" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DAU-NP-NBp" secondAttribute="trailing" id="HOn-LE-mpK"/>
+                                            <constraint firstAttribute="bottom" secondItem="DAU-NP-NBp" secondAttribute="bottom" constant="1" id="JEj-Nh-oP9"/>
+                                            <constraint firstItem="DAU-NP-NBp" firstAttribute="top" secondItem="2GG-GA-B4z" secondAttribute="top" id="QtM-rm-1iP"/>
+                                            <constraint firstAttribute="height" constant="64" id="eak-uR-fLz"/>
+                                            <constraint firstItem="DAU-NP-NBp" firstAttribute="leading" secondItem="2GG-GA-B4z" secondAttribute="leading" id="sKm-jj-7L7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="eak-uR-fLz"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94509803921568625" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2GG-GA-B4z" firstAttribute="top" secondItem="TDs-Md-0CC" secondAttribute="top" constant="10" id="CIb-dn-AIu"/>
+                                    <constraint firstItem="2GG-GA-B4z" firstAttribute="leading" secondItem="TDs-Md-0CC" secondAttribute="leading" constant="8" id="OrK-8N-nqB"/>
+                                    <constraint firstAttribute="trailing" secondItem="2GG-GA-B4z" secondAttribute="trailing" constant="8" id="RBN-uG-W9e"/>
+                                    <constraint firstAttribute="bottom" secondItem="2GG-GA-B4z" secondAttribute="bottom" constant="10" id="uML-Z1-5GW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3N6-jE-j3G">
+                                <rect key="frame" x="0.0" y="129" width="600" height="252"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwt-QT-nak" customClass="SWBLocationFormView" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="252"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="252" id="Uxl-Q8-9bc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84313725490196079" green="0.84705882352941175" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fwt-QT-nak" firstAttribute="leading" secondItem="3N6-jE-j3G" secondAttribute="leading" id="2SB-EG-ZJg"/>
+                                    <constraint firstItem="fwt-QT-nak" firstAttribute="top" secondItem="3N6-jE-j3G" secondAttribute="top" id="VXc-Mz-Yby"/>
+                                    <constraint firstAttribute="trailing" secondItem="fwt-QT-nak" secondAttribute="trailing" id="eLd-uz-O5b"/>
+                                    <constraint firstAttribute="height" secondItem="fwt-QT-nak" secondAttribute="height" id="lOK-gF-6YX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWX-hH-9aG" customClass="SWBMapView" customModule="SweepBright" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="381" width="600" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AWX-hH-9aG" firstAttribute="leading" secondItem="E0e-Kk-OXO" secondAttribute="leading" id="1KM-dX-SsB"/>
+                            <constraint firstItem="TDs-Md-0CC" firstAttribute="leading" secondItem="E0e-Kk-OXO" secondAttribute="leading" id="2cq-cz-K7l"/>
+                            <constraint firstItem="3N6-jE-j3G" firstAttribute="top" secondItem="TDs-Md-0CC" secondAttribute="bottom" id="IfF-NU-qNT"/>
+                            <constraint firstAttribute="trailing" secondItem="3N6-jE-j3G" secondAttribute="trailing" id="Jip-Jm-48p"/>
+                            <constraint firstAttribute="trailing" secondItem="AWX-hH-9aG" secondAttribute="trailing" id="V7Q-eA-A3x"/>
+                            <constraint firstItem="MdA-RB-7tu" firstAttribute="top" secondItem="AWX-hH-9aG" secondAttribute="bottom" id="Z1S-3Z-yPO"/>
+                            <constraint firstAttribute="trailing" secondItem="TDs-Md-0CC" secondAttribute="trailing" id="Zke-BW-Jex"/>
+                            <constraint firstItem="AWX-hH-9aG" firstAttribute="top" secondItem="fwt-QT-nak" secondAttribute="bottom" id="cga-s4-XFe"/>
+                            <constraint firstItem="TDs-Md-0CC" firstAttribute="top" secondItem="muJ-fV-bFB" secondAttribute="bottom" id="hYz-ij-TiM"/>
+                            <constraint firstItem="3N6-jE-j3G" firstAttribute="leading" secondItem="E0e-Kk-OXO" secondAttribute="leading" id="vss-Q2-j83"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="LOCATION" id="4rN-Rk-xKJ" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target">
+                        <connections>
+                            <outlet property="backBarButtonItem" destination="YY3-uu-eX4" id="k1V-ax-mzH"/>
+                            <outlet property="leftBarButtonItem" destination="YY3-uu-eX4" id="cO5-3J-ByE"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.32941176470588235" green="0.63529411764705879" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="askingPermissionLabel" destination="YMV-20-ZNL" id="3c8-2B-qTv"/>
+                        <outlet property="backButton" destination="YY3-uu-eX4" id="PKA-J0-xf8"/>
+                        <outlet property="getCurrentLocationButton" destination="XsG-H0-R6d" id="k4d-zL-LnB"/>
+                        <outlet property="gettingLocationView" destination="lZc-h0-K7v" id="Ma6-lH-xCo"/>
+                        <outlet property="locationForm" destination="fwt-QT-nak" id="BDB-b0-AHm"/>
+                        <outlet property="mapView" destination="AWX-hH-9aG" id="cgl-nf-Xtg"/>
+                        <outlet property="permissionDeniedLabel" destination="zM3-x0-IFD" id="GUk-B4-hHM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Itt-yR-BKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem image="back" style="plain" id="YY3-uu-eX4" customClass="SWBBackButton" customModule="SweepBright" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="698"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-location" width="16" height="16"/>
+        <image name="back" width="24" height="14"/>
+    </resources>
+</document>

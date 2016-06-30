@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MGF-7j-x6r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Visit-->
+        <scene sceneID="bUd-3j-BRv">
+            <objects>
+                <tableViewController id="MGF-7j-x6r" customClass="SWBVisitOverviewTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="64" sectionHeaderHeight="18" sectionFooterHeight="18" id="sy7-l9-vuk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="zYh-oQ-TE1">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" placeholder="Search All Leads" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-XK-tnR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <color key="barTintColor" red="0.94117647058823528" green="0.94509803921568625" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtn-cN-jH7">
+                                    <rect key="frame" x="0.0" y="44" width="600" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past Visits" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFM-tT-GRf">
+                                            <rect key="frame" x="15" y="10" width="68" height="18"/>
+                                            <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                            <color key="textColor" red="0.33725490196078434" green="0.32549019607843138" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS6-P7-pZV">
+                                            <rect key="frame" x="15" y="30" width="99" height="20"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="3 visits in 28 days">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.67843137254901964" green="0.68627450980392157" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="13" name="LFTEtica-Regular"/>
+                                                        <real key="NSKern" value="0.0"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="20" maximumLineHeight="20" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="bFM-tT-GRf" firstAttribute="top" secondItem="gtn-cN-jH7" secondAttribute="top" constant="10" id="72m-nK-Wxj"/>
+                                        <constraint firstItem="bFM-tT-GRf" firstAttribute="leading" secondItem="gtn-cN-jH7" secondAttribute="leading" constant="15" id="8ju-zZ-aPd"/>
+                                        <constraint firstItem="CS6-P7-pZV" firstAttribute="leading" secondItem="bFM-tT-GRf" secondAttribute="leading" id="AAP-yy-tFw"/>
+                                        <constraint firstItem="CS6-P7-pZV" firstAttribute="top" secondItem="bFM-tT-GRf" secondAttribute="bottom" constant="2" id="mZY-mi-4bV"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PT-ZF-rvL">
+                                    <rect key="frame" x="0.0" y="44" width="600" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="4Qb-up-fBh"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                    <state key="normal" image="arrow-segue"/>
+                                    <connections>
+                                        <segue destination="LA2-QK-DQN" kind="show" id="6Ul-00-BLb">
+                                            <segue key="commit" inheritsFrom="parent" id="40a-Il-I5h"/>
+                                            <segue key="preview" inheritsFrom="commit" id="D7n-H1-P8U"/>
+                                        </segue>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="H8w-XK-tnR" firstAttribute="leading" secondItem="zYh-oQ-TE1" secondAttribute="leading" id="1Za-9g-d6w"/>
+                                <constraint firstItem="H8w-XK-tnR" firstAttribute="top" secondItem="zYh-oQ-TE1" secondAttribute="top" id="8WB-DH-p6O"/>
+                                <constraint firstAttribute="trailing" secondItem="6PT-ZF-rvL" secondAttribute="trailing" id="Ozi-QO-F28"/>
+                                <constraint firstAttribute="bottom" secondItem="gtn-cN-jH7" secondAttribute="bottom" id="RCK-uf-JUN"/>
+                                <constraint firstAttribute="bottom" secondItem="6PT-ZF-rvL" secondAttribute="bottom" id="ebn-0T-5fd"/>
+                                <constraint firstItem="gtn-cN-jH7" firstAttribute="top" secondItem="H8w-XK-tnR" secondAttribute="bottom" id="iR2-cW-7dO"/>
+                                <constraint firstAttribute="trailing" secondItem="gtn-cN-jH7" secondAttribute="trailing" id="pmx-0W-Fw2"/>
+                                <constraint firstItem="gtn-cN-jH7" firstAttribute="leading" secondItem="zYh-oQ-TE1" secondAttribute="leading" id="xYQ-lW-VaI"/>
+                                <constraint firstAttribute="trailing" secondItem="H8w-XK-tnR" secondAttribute="trailing" id="xn0-X7-EpA"/>
+                                <constraint firstItem="6PT-ZF-rvL" firstAttribute="leading" secondItem="zYh-oQ-TE1" secondAttribute="leading" id="xpt-eS-FJg"/>
+                            </constraints>
+                        </view>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="MGF-7j-x6r" id="JyI-QU-cje"/>
+                            <outlet property="delegate" destination="MGF-7j-x6r" id="3h2-IC-3En"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Visit" image="visit-icon" selectedImage="visit-icon-selected" id="anl-jj-wd9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PXM-DB-r2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="1097"/>
+        </scene>
+        <!--Past visits-->
+        <scene sceneID="dvB-pg-3Rv">
+            <objects>
+                <tableViewController title="Past visits" id="LA2-QK-DQN" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="39y-C9-VhM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection headerTitle="5 visits in 28 days" id="X4G-Np-Vdb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="QNP-g7-AQd" customClass="SWBPastVisitTableViewCell" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QNP-g7-AQd" id="eNi-Ah-zyN">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="TXl-Mc-wKp" customClass="SWBPastVisitTableViewCell" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TXl-Mc-wKp" id="VVe-hb-pwK">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="1xu-oO-tu5" customClass="SWBPastVisitTableViewCell" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="178" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1xu-oO-tu5" id="qny-Sq-LOj">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="5Kk-9o-OCB" customClass="SWBPastVisitTableViewCell" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="242" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Kk-9o-OCB" id="WIk-b4-vez">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="Q4O-9c-8e1" customClass="SWBPastVisitTableViewCell" customModule="SweepBright" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="306" width="600" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Q4O-9c-8e1" id="Xo0-Vf-a8H">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="LA2-QK-DQN" id="14I-mN-kNg"/>
+                            <outlet property="delegate" destination="LA2-QK-DQN" id="LOr-Xr-Ghp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="past visits" id="g2o-KL-hKM" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq7-zf-F7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="1097"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-segue" width="11" height="20"/>
+        <image name="visit-icon" width="25" height="22"/>
+        <image name="visit-icon-selected" width="25" height="22"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="6Ul-00-BLb"/>
+    </inferredMetricsTieBreakers>
+</document>

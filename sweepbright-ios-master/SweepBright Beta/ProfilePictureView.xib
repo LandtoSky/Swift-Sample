@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Light.otf">
+            <string>LFTEtica-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfilePictureView" customModule="SweepBright" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="Xqv-OA-bh1" id="53a-Bc-zJN"/>
+                <outlet property="labelText" destination="cXI-t5-Wf2" id="0bD-AH-YCc"/>
+                <outlet property="progressView" destination="z2G-bo-gnM" id="rBq-TK-AIy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Z99-Xc-Ks0">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXI-t5-Wf2">
+                    <rect key="frame" x="293" y="279" width="14" height="41"/>
+                    <fontDescription key="fontDescription" name="LFTEtica-Light" family="LFT Etica" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xqv-OA-bh1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="48"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z2G-bo-gnM">
+                    <rect key="frame" x="10" y="298" width="580" height="5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="ZWy-W8-dyV"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="0.84313725490000002" green="0.84705882349999995" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="cXI-t5-Wf2" firstAttribute="centerY" secondItem="Z99-Xc-Ks0" secondAttribute="centerY" id="1jo-He-8Dm"/>
+                <constraint firstAttribute="trailing" secondItem="Xqv-OA-bh1" secondAttribute="trailing" id="9pD-dH-f09"/>
+                <constraint firstItem="Xqv-OA-bh1" firstAttribute="leading" secondItem="Z99-Xc-Ks0" secondAttribute="leading" id="LVx-Mv-Y6i"/>
+                <constraint firstAttribute="width" secondItem="Z99-Xc-Ks0" secondAttribute="height" id="RrT-ep-pQZ"/>
+                <constraint firstItem="Xqv-OA-bh1" firstAttribute="top" secondItem="Z99-Xc-Ks0" secondAttribute="top" id="Soy-5a-Bpe"/>
+                <constraint firstAttribute="trailing" secondItem="z2G-bo-gnM" secondAttribute="trailing" constant="10" id="UPQ-ZR-Y86"/>
+                <constraint firstItem="z2G-bo-gnM" firstAttribute="centerY" secondItem="Z99-Xc-Ks0" secondAttribute="centerY" id="bau-r6-8vN"/>
+                <constraint firstItem="z2G-bo-gnM" firstAttribute="leading" secondItem="Z99-Xc-Ks0" secondAttribute="leading" constant="10" id="r5o-GU-lmZ"/>
+                <constraint firstItem="cXI-t5-Wf2" firstAttribute="centerX" secondItem="Z99-Xc-Ks0" secondAttribute="centerX" id="vO0-dy-frm"/>
+                <constraint firstAttribute="bottom" secondItem="Xqv-OA-bh1" secondAttribute="bottom" id="wnO-WJ-TR1"/>
+            </constraints>
+            <point key="canvasLocation" x="589" y="655"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,36 @@
+{
+    "data": [
+             {
+             "id": "d05b123b-5ea6-4487-8237-65d3d970e81b",
+             "type": "house",
+             "negotiation": "sale",
+             "is_archived": true,
+             "attributes": {
+             "energy": {
+             "documents": {}
+             },
+             "building": {
+             "renovation": {},
+             "construction": {}
+             },
+             "features": {
+             "energy": {},
+             "comfort": {},
+             "ecology": {},
+             "security": {},
+             "heating_cooling": {}
+             },
+             "settings": {},
+             "amenities": [],
+             "structure": {
+             "rooms": {}
+             },
+             "conditions": {},
+             "floor_plans": {},
+             "orientation": {}
+             },
+             "created_at": "2016-05-10T15:09:19+00:00",
+             "updated_at": "2016-05-10T15:09:25+00:00"
+             }
+]
+}

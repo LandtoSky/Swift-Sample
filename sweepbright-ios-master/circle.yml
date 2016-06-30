@@ -1,0 +1,12 @@
+machine:
+    xcode:
+        version: "7.3"    
+deployment:
+    review:
+      branch: master
+      commands:
+        - gym --scheme "$XCODE_SCHEME" --workspace "$XCODE_WORKSPACE" --use_legacy_build_api
+        - ipa distribute:crashlytics
+            --crashlytics_path Pods/Crashlytics
+            --api_token    "$CRASHLYTICS_API_KEY"
+            --build_secret "$CRASHLYTICS_SECRET"

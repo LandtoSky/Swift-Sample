@@ -1,0 +1,286 @@
+----------------------------
+Release 1.1.1 Build 1
+----------------------------
+ADDED
+- Land on the contact detail screen after inserting a new one
+- Land on the property detail screen after inserting a new one
+- List of location preferences
+
+CHANGED
+- icons on the property overview grid
+
+FIXED
+- Blue lines colors at contact filter screen
+- Do not change the background to gray after pressing in a cell
+- Contact notes request
+- Contact address request
+----------------------------
+Release 1.1.0 Build 1
+----------------------------
+ADDED:
+- Contact photo upload
+- Photo cache system
+
+FIXED:
+- Crash after saving the legal & Docs
+- Crash after saving the access form
+
+----------------------------
+Release 1.0.5 Build 32
+----------------------------
+ADDED:
+- Placeholder on the access description
+- Vendors
+- Show the correct contact (investor, lead or vendor)
+- New for validation to contacts
+
+REMOVED:
+- Negotiators
+
+CHANGED:
+- Stepper UI
+- Changed label on property setting to Add vendor
+- Add a new contact form style
+
+FIXED
+- Font at condition slider
+- Font at add buttons
+- Typo at the location form
+- Drag & Drop
+- Add a new contact request
+- Update a contact
+
+----------------------------
+Release 1.0.5 Build 31
+----------------------------
+ADDED:
+- Email authentication
+- CRM: Add contact a current address to a contact
+- CRM: Add settings screen
+- CRM: Unarchive & Archive a contact
+- CRM: Change negotiator (showing the list of contacts as described on the issue)
+- CRM: Sync a contacts note
+- Improve logging for support purpose
+
+CHANGED:
+- Removed publish button on the address form
+
+FIXED:
+- Alignment and padding of the address form
+- Vertical align of the back arrow on the navigation bar (that one on top)
+- Issue that was crashing the app when try to call a contact from the match screen
+
+----------------------------
+Release 1.0.5 Build 30
+----------------------------
+ADDED:
+- Add a new contact
+- See a contact profile
+- EPC values
+- CRM: Lead location
+- CRM: Lead notes
+
+CHANGED:
+- Removed price on the project master template screen
+- Removed general condition on the units screen
+
+FIXED:
+- Image Drag Drop
+- Bug when save the legal&Docs information
+- Alarm code font
+----------------------------
+Release 1.0.5 Build 29
+----------------------------
+ADDED:
+- list of contacts
+- edit project master template
+CHANGED:
+- bug fixes
+----------------------------
+Release 1.0.5 Build 28
+----------------------------
+ADDED:
+- authentication by email
+- Sync state of sale
+- Add a new project
+CHANGED:
+- Gradient at state of sale element
+----------------------------
+Release 1.0.5 Build 27
+----------------------------
+ADDED:
+- Settings sync
+CHANGED:
+- Button that show the alarm code on the Access section
+- Label's text on the drag & drop images
+FIXED:
+- Unselectable cells on the features screen
+- Align on the CRM: lead contact info
+- list of properties sync
+----------------------------
+Release 1.0.5 Build 26
+----------------------------
+ADDED:
+- Access sync
+- CRM contact details grid
+- CRM: Lead contact information
+- CRM: Lead preferences
+- CRM: Lead matches
+CHANGED:
+- Amenities icons
+FIXED:
+- Features: year built sync
+- Price: mask input
+----------------------------
+Release 1.0.5 Build 25
+----------------------------
+ADDED:
+- Mail modal
+- CRM home screen
+CHANGED:
+- Amenities icons
+FIXED:
+- missing arrows on the feedback buttons
+----------------------------
+Release 1.0.5 Build 24
+----------------------------
+ADDED:
+- Drag & drop on the images screen
+Fixed:
+- Issues on the form screen
+- Show only one orientation per time
+- Problem with the stepper
+- An image picker was appearing when opening the filter of properties
+----------------------------
+Release 1.0.5 Build 23
+----------------------------
+ADDED:
+- Match screen
+- Visit screen
+- Match detail
+- Visit past visits
+- Mr. Hannes iPod on provision profile
+CHANGED:
+- Navigation flow
+----------------------------
+Release 1.0.5 Build 22
+----------------------------
+ADDED:
+- Sync legal & docs
+- Sync comfort list
+- Sync ecology list
+- Sync heating-cooling list
+- Sync security list
+- Sync energy list
+- Sync kitchen condition
+- Sync Bathroom condition
+- Sync building section
+- Sync renovation section
+FIXED:
+- Location request
+- Location publish button
+REMOVED:
+- AdHoc target
+----------------------------
+Release 1.0.5 Build 21
+----------------------------
+- Fix continuous deployment
+----------------------------
+Release 1.0.5 Build 20
+----------------------------
+ADDED:
+* Filter list of properties
+* Sync amenities
+CHANGES:
+* Update continuous deployment with the new Circle features
+----------------------------
+Release 1.0.5 Build 17
+----------------------------
+CHANGES:
+* Icons on overview
+BUG FIXES:
+* Operation to update number of floors
+* Parking and Guest House icons were not appearing
+----------------------------
+Release 1.0.5 Build 16
+----------------------------
+NEW FEATURES:
+* New switch element on rooms controller
+
+----------------------------
+Release 1.0.5 Build 15
+----------------------------
+NEW FEATURES:
+* Sync price with the server
+
+----------------------------
+Release 1.0.5 Build 14
+----------------------------
+NEW FEATURES:
+* Sync general condition with the server
+CHANGES:
+* Update ReactiveCocoa version
+* Update Fabric version
+
+----------------------------
+Release 1.0.5 Build 13
+----------------------------
+NEW FEATURES:
+* Threads to start the app
+* Added street 2 on the location form
+
+CHANGES:
+* Use Google Maps as geocode service
+* Use Google Maps as map UI element
+
+BUG FIXES:
+* Fix compass issue when the device doesn't have one
+
+----------------------------
+Release 1.0.5 Build 12
+----------------------------
+NEW FEATURES:
+* The icons change based on the value of a slider
+* Added street 2 field on the locations
+
+CHANGES:
+* Collapse an orientation button after press the 'Set' button
+
+BUG FIXES:
+* Fix camera button
+----------------------------
+Release 1.0.5 Build 11
+----------------------------
+NEW FEATURES:
+* Add rooms (bedrooms, bathrooms and wc) in a property
+* Update the size of a room
+
+CHANGES:
+* Collapse an orientation button after press the 'Set' button
+
+BUG FIXES:
+* Show the property location on the map
+
+----------------------------
+Release 1.0.5 Build 10
+----------------------------
+NEW FEATURES:
+* Add terrace orientation
+* Update number of floors
+
+CHANGES:
+* Collapse compass cell animation
+
+BUG FIXES:
+* Refresh expired token
+
+----------------------------
+Release 1.0.5 Build 9
+----------------------------
+NEW FEATURES:
+* New login screen
+* Save garden and terrace orientations
+* Update property after a sync
+
+CHANGES:
+* Convert dates of the properties with time zones

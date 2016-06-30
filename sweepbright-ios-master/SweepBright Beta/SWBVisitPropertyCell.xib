@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PropertyCell" id="g9P-ZY-1zr" customClass="SWBVisitPropertyCell" customModule="SweepBright" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g9P-ZY-1zr" id="cBC-Vo-p07">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoHousePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="gXA-v5-EuZ">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="92" id="feS-DA-dfa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 500,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAu-3Z-8eU">
+                        <rect key="frame" x="112" y="10" width="447" height="18"/>
+                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                        <color key="textColor" red="0.33725490200000002" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kent, Kattegatstraat 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4U-uN-TuM">
+                        <rect key="frame" x="112" y="30" width="447" height="16"/>
+                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="13"/>
+                        <color key="textColor" red="0.43921568630000002" green="0.41568627450000001" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edited 30 minutes ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3s-VS-hXV">
+                        <rect key="frame" x="112" y="56" width="447" height="16"/>
+                        <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="13"/>
+                        <color key="textColor" red="0.76470588240000004" green="0.74901960779999999" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMV-Ua-XCj">
+                        <rect key="frame" x="94" y="13" width="12" height="12"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visit-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-tX-qSX">
+                                <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JH4-tX-qSX" secondAttribute="trailing" id="0lL-PG-R1l"/>
+                            <constraint firstItem="JH4-tX-qSX" firstAttribute="leading" secondItem="WMV-Ua-XCj" secondAttribute="leading" id="7mz-rI-DdX"/>
+                            <constraint firstItem="JH4-tX-qSX" firstAttribute="top" secondItem="WMV-Ua-XCj" secondAttribute="top" id="Cfw-Ey-YWk"/>
+                            <constraint firstAttribute="width" constant="12" id="OJf-nO-i7y"/>
+                            <constraint firstAttribute="height" constant="12" id="PnL-3w-eHw"/>
+                            <constraint firstAttribute="bottom" secondItem="JH4-tX-qSX" secondAttribute="bottom" id="v6f-r1-TDJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="v4U-uN-TuM" firstAttribute="leading" secondItem="wAu-3Z-8eU" secondAttribute="leading" id="63S-FI-Z29"/>
+                    <constraint firstItem="WMV-Ua-XCj" firstAttribute="leading" secondItem="gXA-v5-EuZ" secondAttribute="trailing" constant="2" id="CmE-yw-5po"/>
+                    <constraint firstItem="g3s-VS-hXV" firstAttribute="top" secondItem="v4U-uN-TuM" secondAttribute="bottom" constant="10" id="OUz-Iq-aSw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="g3s-VS-hXV" secondAttribute="trailing" id="SeW-N9-v0z"/>
+                    <constraint firstItem="wAu-3Z-8eU" firstAttribute="top" secondItem="cBC-Vo-p07" secondAttribute="top" constant="10" id="Ugr-Bt-uzQ"/>
+                    <constraint firstItem="g3s-VS-hXV" firstAttribute="leading" secondItem="wAu-3Z-8eU" secondAttribute="leading" id="YoR-bi-01P"/>
+                    <constraint firstItem="WMV-Ua-XCj" firstAttribute="centerY" secondItem="wAu-3Z-8eU" secondAttribute="centerY" id="aFH-Gh-BXh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="v4U-uN-TuM" secondAttribute="trailing" id="hcw-Cc-UfQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wAu-3Z-8eU" secondAttribute="trailing" id="iOR-7Q-NlO"/>
+                    <constraint firstItem="wAu-3Z-8eU" firstAttribute="leading" secondItem="gXA-v5-EuZ" secondAttribute="trailing" constant="20" id="o1t-zp-aKi"/>
+                    <constraint firstItem="v4U-uN-TuM" firstAttribute="top" secondItem="wAu-3Z-8eU" secondAttribute="bottom" constant="2" id="t5u-EO-8Lk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="gXA-v5-EuZ" firstAttribute="top" secondItem="g9P-ZY-1zr" secondAttribute="top" id="GFs-lv-RGF"/>
+                <constraint firstItem="gXA-v5-EuZ" firstAttribute="leading" secondItem="g9P-ZY-1zr" secondAttribute="leading" id="bNN-UG-Lfs"/>
+                <constraint firstAttribute="bottom" secondItem="gXA-v5-EuZ" secondAttribute="bottom" id="gUo-OT-c6M"/>
+                <constraint firstItem="gXA-v5-EuZ" firstAttribute="height" secondItem="g9P-ZY-1zr" secondAttribute="height" id="sx9-CC-rmx"/>
+            </constraints>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="addressLabel" destination="v4U-uN-TuM" id="hpa-tb-7jV"/>
+                <outlet property="costLabel" destination="wAu-3Z-8eU" id="Sus-Jm-3gb"/>
+                <outlet property="imageProperty" destination="gXA-v5-EuZ" id="qdF-J2-wT1"/>
+                <outlet property="statusLabel" destination="g3s-VS-hXV" id="HDA-k0-6sM"/>
+            </connections>
+            <point key="canvasLocation" x="549" y="319"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NoHousePhoto" width="92" height="88"/>
+        <image name="visit-arrow" width="12" height="12"/>
+    </resources>
+</document>

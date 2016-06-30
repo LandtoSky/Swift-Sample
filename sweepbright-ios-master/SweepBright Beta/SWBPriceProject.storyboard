@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eip-8e-4Qf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="LFT_Etica_Reg.otf">
+            <string>LFTEtica-Regular</string>
+            <string>LFTEtica-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--PRICE-->
+        <scene sceneID="QrV-e8-BGJ">
+            <objects>
+                <tableViewController storyboardIdentifier="SWBPriceProjectTableViewController" id="eip-8e-4Qf" customClass="SWBPriceDefaultTableViewController" customModule="SweepBright" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="y94-ZV-BAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection headerTitle="Costs" id="oM7-NN-qW4">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="1Bc-2T-o5w">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Bc-2T-o5w" id="TgG-xw-Alt">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="EGW €55 pm" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Og-wM-Se0">
+                                                    <rect key="frame" x="15" y="15" width="570" height="57"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.33725490196078434" green="0.32549019607843138" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0Og-wM-Se0" firstAttribute="top" secondItem="TgG-xw-Alt" secondAttribute="top" constant="15" id="3i5-8u-u71"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Og-wM-Se0" secondAttribute="trailing" constant="15" id="blg-Yc-gbJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="0Og-wM-Se0" secondAttribute="bottom" constant="15" id="ccf-sp-j9Y"/>
+                                                <constraint firstItem="0Og-wM-Se0" firstAttribute="leading" secondItem="TgG-xw-Alt" secondAttribute="leading" constant="15" id="diz-ZB-0of"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Taxes" id="oAW-SU-6tl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="Pbj-E3-idY">
+                                        <rect key="frame" x="0.0" y="253" width="600" height="88"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pbj-E3-idY" id="y2E-0d-p9x">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="87"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Klein beschrijf + KI €700" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qNs-lL-dug">
+                                                    <rect key="frame" x="15" y="15" width="570" height="57"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.33725490196078434" green="0.32549019607843138" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="LFTEtica-Regular" family="LFT Etica" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qNs-lL-dug" firstAttribute="top" secondItem="y2E-0d-p9x" secondAttribute="top" constant="15" id="1Rg-0V-xNn"/>
+                                                <constraint firstItem="qNs-lL-dug" firstAttribute="leading" secondItem="y2E-0d-p9x" secondAttribute="leading" constant="15" id="1ZT-KJ-6pL"/>
+                                                <constraint firstAttribute="trailing" secondItem="qNs-lL-dug" secondAttribute="trailing" constant="15" id="1rR-8N-hpZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="qNs-lL-dug" secondAttribute="bottom" constant="15" id="dT5-BC-5UZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="eip-8e-4Qf" id="rWq-aM-VYu"/>
+                            <outlet property="delegate" destination="eip-8e-4Qf" id="B4U-eO-IwF"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="PRICE" id="AFX-2b-KyS" customClass="SWBNavigationItem" customModule="SweepBright" customModuleProvider="target">
+                        <connections>
+                            <outlet property="backBarButtonItem" destination="F9b-1f-Yxg" id="BB0-1b-uei"/>
+                            <outlet property="leftBarButtonItem" destination="F9b-1f-Yxg" id="uYf-Wv-x4L"/>
+                        </connections>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO">
+                        <color key="barTintColor" red="0.32941176470588235" green="0.63529411764705879" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedNavigationBarMetrics>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="F9b-1f-Yxg" id="Yhc-nb-mcy"/>
+                        <outlet property="costsTextView" destination="0Og-wM-Se0" id="xTq-Cr-ehk"/>
+                        <outlet property="taxesTextView" destination="qNs-lL-dug" id="t42-7p-BXT"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6J-ns-7Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem image="back" style="plain" id="F9b-1f-Yxg" customClass="SWBBackButton" customModule="SweepBright" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="3231" y="1606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="24" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+disabled_rules:
+- line_length # Conflicts with AppDelegate
+- force_try #Used on Realm
+- force_cast
+- variable_name
+- variable_name_min_length
+- type_name
+- legacy_constructor # Outdated
+- conditional_binding_cascade
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+- Carthage
+- Pods
+
+variable_name:
+    min_length: 2
+    excluded:
+     - created_at
